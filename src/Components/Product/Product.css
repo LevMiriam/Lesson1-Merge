@@ -1,0 +1,160 @@
+
+.search-bar {
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers the icon and input */
+    border: 1px solid #ccc; /* Border for the search bar */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* Background color */
+    top: 55px;
+    position: fixed;
+    z-index: 10; 
+}
+
+.search-icon {
+    margin-left: 5px;
+    margin-right: 10px; /* Space between icon and input */
+    color: #325c5a; /* Icon color */
+    height: 30px;
+    width: 30px;
+}
+
+.form-control {
+    border: none; /* Remove default input border */
+    outline: none; /* Remove outline on focus */
+    flex: 1; /* Allow input to take remaining space */
+    padding: 10px; /* Larger padding for better size */
+    font-size: 16px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-control:focus {
+    border-color: #325c5a; 
+}
+
+.container {
+
+    padding: 80px 20px 20px; 
+    width: 100%; 
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 360px;
+    height: auto;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    width: 360px;
+    border-radius: 8px;
+    height: auto;
+}
+
+.card-body {
+    padding-top: 10px; 
+}
+
+.card-title {
+    font-size: 22px; 
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.card-text {
+    margin: 5px 0;
+    color: #666; 
+}
+
+.add-to-cart {
+    background-color: #325c5a; /* Button background color */
+    color: rgb(247, 237, 237); /* Text color */
+    border: none;
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-top: 10px; /* Space above button */
+}
+
+.add-to-cart:hover {
+    background-color: #325c5a; 
+    
+}
+
+.loading {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    width: 100%; 
+    min-height: 100vh;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    width: 100%; 
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); 
+    }
+}
+h4{
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Minimum height, just in case */
+    position: absolute; /* Allows it to position correctly */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+h1 {
+    color: #325c5a; /* Heading color */
+    text-align: center; /* Center the heading */
+}
+
+p {
+    line-height: 1.6; 
+    color: #555;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+.about-container {
+    margin-top: 20px;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f9f9f9;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-left: 555px;
+}
+
+.row {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 1px; 
+    box-sizing: border-box; 
+}
